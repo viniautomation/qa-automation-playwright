@@ -88,7 +88,7 @@ def test_excluir_tarefa(page: Page):
     expect(tarefa).to_have_count(1)
     expect(tarefa).to_have_text("amarelo")
 
-def test_marcar_desmarcar(page: page):
+def test_marcar_desmarcar(page: Page):
    #Missão 05
 
     #1. Abrir o site
@@ -109,7 +109,7 @@ def test_marcar_desmarcar(page: page):
     expect(tarefa).to_have_class("completed")
 
 
-def test_tarefa_vazia(page: page):
+def test_tarefa_vazia(page: Page):
    
     #1. Abrir o site
     page.goto("https://demo.playwright.dev/todomvc/#/")
